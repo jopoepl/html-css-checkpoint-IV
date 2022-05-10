@@ -696,10 +696,15 @@ h1 {
     height: 40vh;
     padding: 4rem 0;
     margin: 2rem 0;
+    position: relative;
 }
 
 .values-box article {
-    margin: 9rem 3rem;
+    /* margin: 9rem 3rem; */
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    left: 2rem;
     background-color: var(--overlay);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -903,9 +908,13 @@ h1 {
 .team .team-box figure {
     width: 100%;
     background-color: white;
-    position: relative;
+    
     margin-top: 4rem;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.308);
+}
+
+.team .team-box figure .img-cont {
+    position: relative;
 }
 
 .team figcaption h4 {
@@ -930,16 +939,17 @@ h1 {
     background-color: rgba(255, 255, 255, 0.712);
     position: absolute;
     z-index: 999;
-    top: 65%;
+    bottom: 0;
     width: 100%;
     display: none;
 }
 .team .social-icons i {
     font-size: 1.5rem;
+    color: black;
 }
 
 
-.team .team-box figure:hover .social-icons {
+.team .team-box figure .img-cont:hover .social-icons {
     display: flex;
 }
 
@@ -1261,18 +1271,19 @@ form button {
     padding-right: 1rem;
 }
 
-footer .scroll-top {
+footer #scroll-top {
     position: fixed;
-    bottom: 4rem;
+    bottom: 2rem;
     right: 4rem;
-    color: white;
+    padding: 0;
+    background-color: #eb704785;
     
 }
 
-footer .scroll-top i {
+footer #scroll-top i {
     color: white;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -1544,9 +1555,18 @@ footer .scroll-top i {
         flex: 0 1 45%;
     }
 
-    .team .team-box figure .social-icons {
-        visibility:hidden;
+    .team .social-icons {
+        padding: 3rem  2rem ;
+    } 
+
+    .team .social-icons i {
+        font-size: 3rem;
+        padding: 1rem;
     }
+
+    /* .team .team-box figure .social-icons {
+        visibility:hidden;
+    } */
 
     /* Pricing */
     .pricing .container {
