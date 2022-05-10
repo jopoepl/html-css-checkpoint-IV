@@ -505,19 +505,22 @@ h1 {
     color: var(--accent);
     border-radius: 50%;
     border: 1px solid var(--accent);
-    z-index: 1;
-    left: 45%;
-    top: 45%;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
 .about-us .about-img img {
     height: 100%;
     object-fit: cover;
+    
 }
 
 .about-us .about-img {
     position: relative;
+    
 }
 
 
@@ -552,7 +555,9 @@ h1 {
     font-size: 2rem;
     font-weight: 500;
 }
-
+.about-us-text .icon-text figure {
+    padding-right: 1rem;
+}
 .about-us-text .icon-text i {
     font-size: 3rem;
     padding: 1.5rem;
@@ -1256,6 +1261,22 @@ form button {
     padding-right: 1rem;
 }
 
+footer .scroll-top {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    color: white;
+    
+}
+
+footer .scroll-top i {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+
+
 /* BLOG PAGE */
 
 #navigation-link {
@@ -1286,6 +1307,7 @@ form button {
 .blog-box h3 {
     font-size: 1.8rem;
     font-weight: 700;
+    padding-top: 1rem;
 }
 .blog-box i {
     font-size: 1rem;
@@ -1450,10 +1472,10 @@ form button {
         padding-top: 5rem
     }
 
-    .about-us .about-img i {
+    /* .about-us .about-img i {
         left: 48%;
         top: 45%;
-    }
+    } */
 
     /* Clients */
 
@@ -1596,7 +1618,7 @@ form button {
     @media screen and (max-width: 768px) {
 
     html {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     
@@ -1706,6 +1728,7 @@ form button {
 
     .footer-nav .box2 {
         padding-left: 0;
+        font-size: 1.2rem;
     }
 
     .footer-nav .box2-links, .footer-nav .box2-services {
